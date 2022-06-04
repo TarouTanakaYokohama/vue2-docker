@@ -2,10 +2,10 @@ up:
 	docker compose up -d
 build:
 	docker compose build --no-cache --force-rm
-bash:
+app:
 	docker-compose exec app /bin/bash
 dev:
-	docker compose exec app yarn serve
+	docker compose exec app npm run serve
 
 stop:
 	docker compose stop
